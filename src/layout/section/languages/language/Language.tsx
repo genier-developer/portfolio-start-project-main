@@ -1,14 +1,22 @@
 import React from 'react';
+import styled from "styled-components";
 
 type LanguagePropsType = {
     name: string
 }
-const Language = (props: LanguagePropsType) => {
+export const Language = (props: LanguagePropsType) => {
     return (
-        <div>
+        <StyledLanguage>
             <span>{props.name}</span>
-        </div>
+        </StyledLanguage>
     );
 };
 
-export default Language;
+const StyledLanguage = styled.h4`
+  //color: #464866;
+  //font-size: 1.3rem;
+  //margin: 0 auto;
+`
+
+
+

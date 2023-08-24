@@ -1,28 +1,36 @@
 import React from 'react';
 import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import Language from "./language/Language";
+// import {StyledLanguage} from "./language/Language";
+import {Language} from "./language/Language";
+import {SectionTitle} from "../../../components/SectionTitle";
+import {Container} from "../../../components/Container";
 
 
 export const Languages = () => {
     return (
         <StyledLanguages>
-            <LanguageTitle>Languages</LanguageTitle>
-            <FlexWrapper wrap={'wrap'} justify={"space-between"} direction={'column'}>
-                <Language name={'Russian'}/>
-                <Language name={'English'}/>
-                <Language name={'French'}/>
-            </FlexWrapper>
+            <SectionTitle>Languages</SectionTitle>
+            <Container>
+                <FlexWrapper direction={'column'}>
+                    <Language name={'Russian (native)'}/>
+                    <Language name={'English'}/>
+                    <Language name={'French'}/>
+                </FlexWrapper>
+            </Container>
         </StyledLanguages>
     );
 };
 
 const StyledLanguages = styled.section`
-  min-height: 70vh;
-  background-color: #A8D0E6;
+  min-height: 50vh;
+  background-color: #C5CBE3;
+
 `
 
-const LanguageTitle = styled.h3`
-  color: #29648A;
-`
+// const SectionTitle = styled.h3`
+//
+//   text-align: center;
+//   padding: 20px 0;
+//   font-size: 2rem;
+// `
