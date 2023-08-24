@@ -1,22 +1,24 @@
-import './App.css';
-import styled from 'styled-components';
-import {Header} from "./layout/header/Header";
-import {Main} from "./layout/section/main/Main";
-import {Skills} from "./layout/section/skills/Skills";
-import {Languages} from "./layout/section/languages/Languages";
-import {Works} from "./layout/section/works/Works";
+import { Suspense } from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
+import { AboutPageAsync } from './pages/AboutPage/AboutPage.async';
+import { MainPageAsync } from './pages/MainPage/MainPage.async';
+import { useTheme } from './theme/useTheme';
+import './styles/index.scss';
 
-
-function App() {
-    return (
-        <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Languages/>
-            <Works/>
-        </div>
-    );
-}
+const App = () => {
+  const { theme, toggleTheme } = useTheme();
+  return (
+    <div className={`app ${theme}`}>
+      <button onClick={toggleTheme}>Toggle theme</button>
+      <Link to="/">Main</Link>
+      <Link to="/about">About</Link>
+      <Suspense fallback="Loading...">
+        <Routes>
+          <Route path="/about" element={<AboutPageAsync />} />
+          <Route path="/" element={<MainPageAsync />} />
+        </Routes></Suspense>
+    </div>
+  );
+};
 
 export default App;
