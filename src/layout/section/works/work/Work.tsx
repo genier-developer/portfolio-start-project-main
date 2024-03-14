@@ -1,10 +1,29 @@
 import React from 'react';
+import {Link} from "../../../../components/Link";
+import {Button} from "../../../../components/Button";
+import {S} from "../Works_Styles"
 
-export const Work = () => {
+
+type WorkPropsType = {
+    src: string,
+    title: string,
+    text: string,
+
+}
+export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
     return (
-        <div>
+        <S.Work>
+            <S.ImageWrapper>
+                <S.Image src={props.src} alt=""/>
+                <Button>View project</Button>
+            </S.ImageWrapper>
 
-        </div>
+            <S.TextWrapper>
+                <S.Title>{props.title}</S.Title>
+                <S.Text>{props.text}</S.Text>
+                <Link href="#">Demo</Link>
+                <Link href="#">Code</Link>
+            </S.TextWrapper>
+        </S.Work>
     );
 };
-
