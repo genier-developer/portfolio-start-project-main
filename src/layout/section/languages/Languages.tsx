@@ -1,28 +1,44 @@
 import React from 'react';
-import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import Language from "./language/Language";
+import {Language} from "./language/Language";
+import {SectionTitle} from "../../../components/SectionTitle";
+import {Container} from "../../../components/Container";
+import {S} from './Languages_Styles'
 
+type LanguagesType = {
+    languageItems: Array<string>
+}
 
-export const Languages = () => {
+const langData = [
+    {
+        lang: "Russian",
+        level: 5
+    },
+    {
+        lang: "English",
+        level: 3
+    },
+    {
+        lang: "French",
+        level: 2
+    },
+]
+
+export const Languages: React.FC<LanguagesType> = (props: LanguagesType) => {
     return (
-        <StyledLanguages>
-            <LanguageTitle>Languages</LanguageTitle>
-            <FlexWrapper wrap={'wrap'} justify={"space-between"} direction={'column'}>
-                <Language name={'Russian'}/>
-                <Language name={'English'}/>
-                <Language name={'French'}/>
-            </FlexWrapper>
-        </StyledLanguages>
+        <S.Languages id={'languages'}>
+            <SectionTitle>Languages</SectionTitle>
+            <Container>
+                <FlexWrapper direction={'column'} align={"center"} justify={"center"}>
+                    <S.LanguageItem>
+
+                        {langData.map((l, index) => {
+                            return <Language lang={l.lang} level={l.level}/>
+                        })}
+
+                    </S.LanguageItem>
+                </FlexWrapper>
+            </Container>
+        </S.Languages>
     );
-};
-
-const StyledLanguages = styled.section`
-  min-height: 70vh;
-  background-color: #A8D0E6;
-`
-
-const LanguageTitle = styled.h3`
-  color: #29648A;
-`
+}
