@@ -1,23 +1,33 @@
 import React from 'react';
-import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
-
+import {Container} from "../../components/Container";
+import {FlexWrapper} from "../../components/FlexWrapper";
+import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
+import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
+import {S} from "./Header_Styles"
 
 
 export const Header = () => {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 768;
+
+    React.useEffect(() => {
+        window.addEventListener("resize", () => setWidth(window.innerWidth));
+    }, []);
+
     return (
-        <StyledHeader>
-            <Logo />
-            <Menu/>
-        </StyledHeader>
+        <S.Header>
+            <Container>
+                <FlexWrapper justify={"space-between"} align={"center"}>
+                    <img src={'../assets/images/colorLogo.png'} alt={'logo'}/>
+                    {/*<Logo/>*/}
+                    {width < breakpoint ?
+                        <MobileMenu/>
+                        : <DesktopMenu/>
+                    }
+                </FlexWrapper>
+            </Container>
+        </S.Header>
     );
 };
 
-const StyledHeader = styled.header`
-  background-color: #29648A;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-`
