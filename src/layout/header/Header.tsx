@@ -5,7 +5,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {S} from "./Header_Styles"
-
+import logo from '../../components/logo/colorLogo.svg'
 
 export const Header = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
@@ -19,8 +19,7 @@ export const Header = () => {
         <S.Header>
             <Container>
                 <FlexWrapper justify={"space-between"} align={"center"}>
-                    <img src={'../assets/images/colorLogo.png'} alt={'logo'}/>
-                    {/*<Logo/>*/}
+                    <img src={logo} alt={'logo'} height={'40px'}/>
                     {width < breakpoint ?
                         <MobileMenu/>
                         : <DesktopMenu/>
