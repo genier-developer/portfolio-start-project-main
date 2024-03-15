@@ -16,7 +16,6 @@ export const Skill = styled.div`
 export const IconWrapper = styled.div`
 
 `
-
 const SkillTitle = styled.h3`
   color: ${theme.colors.font_light};
 

@@ -46,6 +46,17 @@ const skillData = [
         title: 'Material UI',
         viewBox: '0 0 256 256'
     },
+    {
+        iconId: "sass",
+        title: 'SASS',
+        viewBox: '0 0 32 32'
+    },
+    {
+        iconId: "eslint",
+        title: 'ESLint',
+        viewBox: '0 0 32 32'
+    },
+
     // {
     //     iconId: "redux-saga",
     //     title: 'Redux Saga',

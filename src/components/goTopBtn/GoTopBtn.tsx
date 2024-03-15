@@ -3,8 +3,14 @@ import styled from "styled-components";
 import {Icon} from "../icon/Icon";
 
 export const GoTopBtn: React.FC = () => {
+    const goTop = ()=>{
+        if(window.pageYOffset>0){
+            window.scrollBy(0, -25)
+            setTimeout(goTop, 0)
+        }
+    }
     return (
-        <StyledGoTopBtn onClick={() => {}}>
+        <StyledGoTopBtn onClick={goTop}>
             <Icon iconId={"arrow_up"} viewBox={"0 0 24 24"} width={"16"} height={"16"}/>
         </StyledGoTopBtn>
     );
@@ -17,5 +23,8 @@ const StyledGoTopBtn = styled.button`
   right: 30px;
   bottom: 30px;
   border-radius: 15%;
-  
+
+  &:hover {
+    background-color: rgba(197, 248, 125, 0.2);
+  }
 `
