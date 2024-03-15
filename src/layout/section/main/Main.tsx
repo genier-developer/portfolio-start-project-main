@@ -1,49 +1,40 @@
 import React from 'react';
-import styled from "styled-components";
-import photo from "../../../assets/images/Portrait-photo-fotor-20230731151339.jpg"
+import photo from "../../../assets/images/Photo.webp"
 import {FlexWrapper} from "../../../components/FlexWrapper";
-
-
-export const Main = () => {
+import {Container} from "../../../components/Container";
+import {Icon} from "../../../components/icon/Icon";
+import {S} from "./Main_Styles"
+import Typewriter from 'typewriter-effect';
+export const Main: React.FC = () => {
     return (
         <div>
-            <StyledMain>
-                <FlexWrapper align={"center"} justify={"space-around"}>
-                    <div>
-                        <MainName>Olga Genier</MainName>
-                        <MainTitle>Frontend developer</MainTitle>
-                        <Location>Ekaterinburg, Russia</Location>
-                    </div>
-                    <Photo src={photo} alt=""/>
+            <S.Main id={'home'}>
+                <Container>
+                    <FlexWrapper justify={"space-evenly"} align={"center"} wrap={"wrap"}>
+                        <div>
+                            <S.MainName>Olga Genier</S.MainName>
+                            <S.MainTitle>
+                                <p>Frontend developer</p>
+                                <Typewriter
+                                    options={{
+                                        strings: ['Frontend developer'],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </S.MainTitle>
+                            <S.WrapperLocation>
+                                <Icon iconId={"placeholder"} width={"24px"} height={"24px"}/>
+                                <S.Location>Ekaterinburg, Russia</S.Location>
+                            </S.WrapperLocation>
 
-                </FlexWrapper>
-
-            </StyledMain>
+                        </div>
+                        <S.PhotoWrapper>
+                            <S.Photo src={photo} alt=""/>
+                        </S.PhotoWrapper>
+                    </FlexWrapper>
+                </Container>
+            </S.Main>
         </div>
-
     );
 };
-
-const Photo = styled.img`
-  width: 190px;
-  height: 240px;
-  object-fit: cover;
-`
-const StyledMain = styled.div`
-  min-height: 50vh;
-  background-color: #2E9CCA;
-`
-
-const MainTitle = styled.h1`
-  color: #464866;
-`
-
-const MainName = styled.h2`
-  color: #464866;
-  font-size: 3rem;
-`
-
-const Location = styled.span`
-  color:#464866;
-  font-size: 1.2rem;
-`

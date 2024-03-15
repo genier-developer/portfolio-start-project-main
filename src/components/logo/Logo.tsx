@@ -1,10 +1,7 @@
 import React from 'react';
-import {Icon} from "../icon/Icon";
-
 
 export const Logo = () => {
     return (
-        <Icon iconId={'swift'}/>
+        <img src={'./colorLogo.png'} width={"40px"} height={"30px"} alt={'logo'}/>
     );
 };
-
