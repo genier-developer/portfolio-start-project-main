@@ -4,7 +4,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {S} from "./Header_Styles"
-import logo from '../../components/logo/colorLogo.svg'
+import logo from '../../components/logo/colorLogo.png'
 
 export const Header = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
