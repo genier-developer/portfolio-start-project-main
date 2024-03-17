@@ -56,6 +56,11 @@ const skillData = [
         title: 'ESLint',
         viewBox: '0 0 32 32'
     },
+    {
+        iconId: "postman",
+        title: 'Postman',
+        viewBox: '0 0 300 300'
+    },
 
     // {
     //     iconId: "redux-saga",
