@@ -20,8 +20,8 @@ function App() {
             <Skills/>
             <Works/>
             <Languages languageItems={name}/>
-            <Testimony/>
-            <Slogan/>
+            {/*<Testimony/>*/}
+            {/*<Slogan/>*/}
             <Contact/>
             <Footer/>
             <GoTopBtn/>

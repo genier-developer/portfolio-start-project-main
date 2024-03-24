@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import {SectionTitle} from "../../../components/SectionTitle";
-import socialImg from "../../../assets/images/social_net.webp"
 import crcg from "../../../assets/images/crcg.webp"
+import pet_store from "../../../assets/images/pet-store.webp"
+import bookstore from "../../../assets/images/mui-shop.webp"
+import git_search from "../../../assets/images/git-search.webp"
 import {Container} from "../../../components/Container";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
 import {S} from "./Works_Styles"
@@ -30,16 +32,28 @@ const tabsItems: Array<{ title: string, status: TabsStatusType}> = [
 
 const worksData = [
     {
-        scr: socialImg,
-        title: "Social network",
-        text: "This is a social network",
+        scr: crcg,
+        title: "CRCG",
+        text: "Landing page",
+        type: "landing"
+    },
+    {
+        scr: bookstore,
+        title: "Bookstore model",
+        text: "React",
+        type: "react"
+    },
+    {
+        scr: pet_store,
+        title: "Pet's shelter",
+        text: "spa",
         type: "spa"
     },
     {
-        scr: crcg,
-        title: "Landing page",
-        text: "This is a landing page",
-        type: "landing"
+        scr: git_search,
+        title: "Search a Git repo",
+        text: "React",
+        type: "react"
     },
 ]
 

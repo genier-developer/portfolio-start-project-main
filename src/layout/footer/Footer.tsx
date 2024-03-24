@@ -19,6 +19,9 @@ export const Footer = () => {
                 <S.SocialIconLink>
                     <Icon iconId={"linked"} width={"52"} height={"52"} viewBox={"0 0 52 52"}/>
                 </S.SocialIconLink>
+                <S.SocialIconLink>
+                    <Icon iconId={"tele"} width={"52"} height={"52"} viewBox={"0 0 52 52"}/>
+                </S.SocialIconLink>
             </S.SocialIconsList>
             <S.Copyright>© 2024 Olga Genier. All Rights Reserved</S.Copyright>
         </S.Footer>
