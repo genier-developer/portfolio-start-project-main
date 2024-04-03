@@ -18,10 +18,10 @@ const items = [
         title: 'Languages',
         href: 'languages'
     },
-    {
-        title: 'Testimonials',
-        href: 'testimonials'
-    },
+    // {
+    //     title: 'Testimonials',
+    //     href: 'testimonials'
+    // },
     {
         title: 'Contact',
         href: 'contact'
