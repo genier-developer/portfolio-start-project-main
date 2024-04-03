@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import {SectionTitle} from "../../../components/SectionTitle";
-import crcg from "../../../assets/images/crcg.webp"
-import pet_store from "../../../assets/images/pet-store.webp"
-import bookstore from "../../../assets/images/mui-shop.webp"
-import git_search from "../../../assets/images/git-search.webp"
+import pets from "../../../assets/images/pets.webp"
+import cards from '../../../assets/images/cards.webp'
+import partner from "../../../assets/images/partner.webp"
+import CRCGsite from "../../../assets/images/CRCG_site.webp"
 import {Container} from "../../../components/Container";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
 import {S} from "./Works_Styles"
@@ -32,28 +32,36 @@ const tabsItems: Array<{ title: string, status: TabsStatusType}> = [
 
 const worksData = [
     {
-        scr: crcg,
+        scr: CRCGsite,
         title: "CRCG",
         text: "Landing page",
-        type: "landing"
+        type: "landing",
+        code: 'https://github.com/genier-developer/CRCG',
+        href : "https://genier-developer.github.io/CRCG/"
     },
     {
-        scr: bookstore,
-        title: "Bookstore model",
-        text: "React",
-        type: "react"
+        scr: cards,
+        title: "Let's start to learn!",
+        text: "spa",
+        type: "spa",
+        code: 'https://github.com/GodDennis/Cards/tree/main',
+        href : "https://cards-two-xi-78.vercel.app/"
     },
     {
-        scr: pet_store,
+        scr: pets,
         title: "Pet's shelter",
         text: "spa",
-        type: "spa"
+        type: "spa",
+        code: 'https://github.com/genier-developer/pet-firebase',
+        href : "https://pet-firebase.vercel.app/"
     },
     {
-        scr: git_search,
-        title: "Search a Git repo",
+        scr: partner,
+        title: "driving school Partner",
         text: "React",
-        type: "react"
+        type: "react",
+        code : "https://github.com/genier-developer/partnerauto",
+        href: "https://genier-developer.github.io/partnerauto/"
     },
 ]
 
@@ -87,12 +95,13 @@ export const Works: React.FC = () => {
                         return <Work
                             src={w.scr}
                             title={w.title}
-                            text={w.text}/>
+                            text={w.text}
+                            href={w.href}
+                            code={w.code}/>
                     })}
 
                 </FlexWrapper>
             </Container>
         </S.Works>
-
     );
 };

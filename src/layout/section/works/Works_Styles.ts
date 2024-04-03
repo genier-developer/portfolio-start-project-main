@@ -16,7 +16,7 @@ const Work = styled.div`
   background-color: rgba(255, 255, 255, 0.2);
   
   width: 330px;
-  flex-grow: 1;
+  //flex-grow: 1;
 
   ${Link} {
     padding: 10px 0;
@@ -65,7 +65,7 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 270px;
-  object-fit: cover;
+  object-fit: fill;
 `
 
 const Title = styled.h3`
@@ -89,10 +89,9 @@ const TabMenu = styled.nav`
   ul {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 352px;
     width: 100%;
-    //border: 2px solid red;
     margin: 0 auto 40px;
 
 
