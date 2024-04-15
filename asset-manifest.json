@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-start-project-main/static/css/main.31d6cfe0.css",
-    "main.js": "/portfolio-start-project-main/static/js/main.fa0189a4.js",
-    "static/js/787.25eaef86.chunk.js": "/portfolio-start-project-main/static/js/787.25eaef86.chunk.js",
-    "static/media/pets.webp": "/portfolio-start-project-main/static/media/pets.8515b9495730c2b8182b.webp",
-    "static/media/partner.webp": "/portfolio-start-project-main/static/media/partner.3191e0dfe876bbc9147d.webp",
-    "static/media/Photo.webp": "/portfolio-start-project-main/static/media/Photo.569b37bf75a3957f1a3c.webp",
-    "static/media/colorLogo.png": "/portfolio-start-project-main/static/media/colorLogo.288a2fe921f8857f1098.png",
-    "static/media/cards.webp": "/portfolio-start-project-main/static/media/cards.23fc9841363da2a65046.webp",
-    "static/media/icons-sprite.svg": "/portfolio-start-project-main/static/media/icons-sprite.559aa0328717c6beb9ece024e5293a52.svg",
-    "static/media/CRCG_site.webp": "/portfolio-start-project-main/static/media/CRCG_site.4a2fcf2846ed288416be.webp",
-    "static/media/friendConnect.webp": "/portfolio-start-project-main/static/media/friendConnect.c9f1794cbcb976e77c9a.webp",
-    "index.html": "/portfolio-start-project-main/index.html",
-    "main.fa0189a4.js.map": "/portfolio-start-project-main/static/js/main.fa0189a4.js.map",
-    "787.25eaef86.chunk.js.map": "/portfolio-start-project-main/static/js/787.25eaef86.chunk.js.map"
+    "main.css": "/static/css/main.31d6cfe0.css",
+    "main.js": "/static/js/main.cb0d5a4c.js",
+    "static/js/787.25eaef86.chunk.js": "/static/js/787.25eaef86.chunk.js",
+    "static/media/pets.webp": "/static/media/pets.8515b9495730c2b8182b.webp",
+    "static/media/partner.webp": "/static/media/partner.3191e0dfe876bbc9147d.webp",
+    "static/media/Photo.webp": "/static/media/Photo.569b37bf75a3957f1a3c.webp",
+    "static/media/colorLogo.png": "/static/media/colorLogo.288a2fe921f8857f1098.png",
+    "static/media/cards.webp": "/static/media/cards.23fc9841363da2a65046.webp",
+    "static/media/icons-sprite.svg": "/static/media/icons-sprite.559aa0328717c6beb9ece024e5293a52.svg",
+    "static/media/CRCG_site.webp": "/static/media/CRCG_site.4a2fcf2846ed288416be.webp",
+    "static/media/friendConnect.webp": "/static/media/friendConnect.c9f1794cbcb976e77c9a.webp",
+    "index.html": "/index.html",
+    "main.cb0d5a4c.js.map": "/static/js/main.cb0d5a4c.js.map",
+    "787.25eaef86.chunk.js.map": "/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.fa0189a4.js"
+    "static/js/main.cb0d5a4c.js"
   ]
 }
