@@ -18,7 +18,6 @@ function App() {
             <Skills/>
             <Works/>
             <Languages languageItems={name}/>
-            {/*<Contact/>*/}
             <Footer/>
             <GoTopBtn/>
         </div>
