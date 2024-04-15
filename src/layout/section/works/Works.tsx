@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import {SectionTitle} from "../../../components/SectionTitle";
 import pets from "../../../assets/images/pets.webp"
+import friendConnect from "../../../assets/images/friendConnect.webp"
 import cards from '../../../assets/images/cards.webp'
 import partner from "../../../assets/images/partner.webp"
 import CRCGsite from "../../../assets/images/CRCG_site.webp"
@@ -58,10 +59,18 @@ const worksData = [
     {
         scr: partner,
         title: "driving school Partner",
-        text: "React",
+        text: "Landing page",
         type: "react",
         code : "https://github.com/genier-developer/partnerauto",
         href: "https://genier-developer.github.io/partnerauto/"
+    },
+    {
+        scr: friendConnect,
+        title: "Friend Connect net",
+        text: "spa",
+        type: "spa",
+        code : "https://github.com/genier-developer/friend-connect-net",
+        href: "https://genier-developer.github.io/friend-connect-net/"
     },
 ]
 
