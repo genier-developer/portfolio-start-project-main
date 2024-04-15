@@ -22,10 +22,10 @@ const items = [
     //     title: 'Testimonials',
     //     href: 'testimonials'
     // },
-    {
-        title: 'Contact',
-        href: 'contact'
-    }
+    // {
+    //     title: 'Contact',
+    //     href: 'contact'
+    // }
 ]
 
 export const Menu: React.FC = () => {
