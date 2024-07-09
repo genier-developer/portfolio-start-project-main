@@ -30,6 +30,4 @@ export const Link = styled.a<{active?: boolean}>`
     height: 5px;
     `}
   }
-   
- 
 `

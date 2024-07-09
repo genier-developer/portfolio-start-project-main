@@ -6,7 +6,8 @@ import pets from "../../../assets/images/pets.webp"
 import friendConnect from "../../../assets/images/friendConnect.webp"
 import cards from '../../../assets/images/cards.webp'
 import partner from "../../../assets/images/partner.webp"
-import CRCGsite from "../../../assets/images/CRCG_site.webp"
+import CRCGsite from "../../../assets/images/contemporary-room-workplace-office-supplies-concept.webp"
+import rick from "../../../assets/images/rick-and-morty.jpg"
 import {Container} from "../../../components/Container";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
 import {S} from "./Works_Styles"
@@ -55,6 +56,14 @@ const worksData = [
         type: "spa",
         code: 'https://github.com/genier-developer/pet-firebase',
         href : "https://pet-firebase.vercel.app/"
+    },
+    {
+        scr: rick,
+        title: "Rick and Morty",
+        text: "spa",
+        type: "spa",
+        code: 'https://github.com/genier-developer/rick-and-morty',
+        href : "https://rick-and-morty-ten-alpha.vercel.app/"
     },
     {
         scr: partner,

@@ -37,7 +37,7 @@ const ImageWrapper = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
 
   }
 
@@ -50,21 +50,22 @@ const ImageWrapper = styled.div`
       right: 0;
       bottom: 0;
       top: 0;
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(8px);
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(3px);
     }
 
   ${Button} {
     opacity: 1;
     color: ${theme.colors.font_dark};
     background-color: ${theme.colors.accent_bright};
+     
 }
     
 `
 
 const Image = styled.img`
   width: 100%;
-  height: 270px;
+  //height: 270px;
   object-fit: fill;
 `
 

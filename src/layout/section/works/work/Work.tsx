@@ -3,16 +3,14 @@ import {Link} from "../../../../components/Link";
 import {Button} from "../../../../components/Button";
 import {S} from "../Works_Styles"
 
-
 type WorkPropsType = {
     src: string,
     title: string,
     text: string,
     href: string,
     code: string
-
-
 }
+
 export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
     return (
         <S.Work>
