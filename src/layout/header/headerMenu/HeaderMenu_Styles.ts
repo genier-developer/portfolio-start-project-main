@@ -2,7 +2,7 @@ import {theme} from "../../../styles/Theme";
 import styled, {css} from "styled-components";
 
 const ListItem = styled.li`
-
+ 
 `
 const Link = styled.a`
   color: ${theme.colors.accent_bright};
@@ -27,7 +27,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
   width: 200px;
   height: 200px;
-  top: -100px;
+  top: -130px;
   right: -100px;
   z-index: 9999999;
 
