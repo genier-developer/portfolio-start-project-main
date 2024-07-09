@@ -65,8 +65,9 @@ const ImageWrapper = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  //height: 270px;
+  height: 200px;
   object-fit: fill;
+    overflow: hidden;
 `
 
 const Title = styled.h3`

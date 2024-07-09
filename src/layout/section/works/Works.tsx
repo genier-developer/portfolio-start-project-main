@@ -34,8 +34,24 @@ const tabsItems: Array<{ title: string, status: TabsStatusType}> = [
 
 const worksData = [
     {
+        scr: friendConnect,
+        title: "Friend Connect net",
+        text: "spa",
+        type: "spa",
+        code : "https://github.com/genier-developer/friend-connect-net",
+        href: "https://genier-developer.github.io/friend-connect-net/"
+    },
+    {
+        scr: rick,
+        title: "Rick and Morty",
+        text: "spa",
+        type: "spa",
+        code: 'https://github.com/genier-developer/rick-and-morty',
+        href : "https://rick-and-morty-ten-alpha.vercel.app/"
+    },
+    {
         scr: CRCGsite,
-        title: "CRCG",
+        title: "CRCG computer rental",
         text: "Landing page",
         type: "landing",
         code: 'https://github.com/genier-developer/CRCG',
@@ -49,22 +65,16 @@ const worksData = [
         code: 'https://github.com/GodDennis/Cards/tree/main',
         href : "https://cards-two-xi-78.vercel.app/"
     },
+
     {
         scr: pets,
-        title: "Pet's shelter",
+        title: "Save a life",
         text: "spa",
         type: "spa",
         code: 'https://github.com/genier-developer/pet-firebase',
         href : "https://pet-firebase.vercel.app/"
     },
-    {
-        scr: rick,
-        title: "Rick and Morty",
-        text: "spa",
-        type: "spa",
-        code: 'https://github.com/genier-developer/rick-and-morty',
-        href : "https://rick-and-morty-ten-alpha.vercel.app/"
-    },
+
     {
         scr: partner,
         title: "driving school Partner",
@@ -73,14 +83,7 @@ const worksData = [
         code : "https://github.com/genier-developer/partnerauto",
         href: "https://genier-developer.github.io/partnerauto/"
     },
-    {
-        scr: friendConnect,
-        title: "Friend Connect net",
-        text: "spa",
-        type: "spa",
-        code : "https://github.com/genier-developer/friend-connect-net",
-        href: "https://genier-developer.github.io/friend-connect-net/"
-    },
+
 ]
 
 export const Works: React.FC = () => {
