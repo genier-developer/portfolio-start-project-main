@@ -6,16 +6,16 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {S} from "./Skill_Styles"
 
 const skillData = [
-    {
-        iconId: "html",
-        title: 'HTML',
-        viewBox: '0 0 32 32'
-    },
-    {
-        iconId: "css",
-        title: 'CSS',
-        viewBox: '0 0 32 32'
-    },
+    // {
+    //     iconId: "html",
+    //     title: 'HTML',
+    //     viewBox: '0 0 32 32'
+    // },
+    // {
+    //     iconId: "css",
+    //     title: 'CSS',
+    //     viewBox: '0 0 32 32'
+    // },
     {
         iconId: "js",
         title: 'JavaScript',
@@ -46,20 +46,25 @@ const skillData = [
         title: 'Material UI',
         viewBox: '0 0 256 256'
     },
-    {
-        iconId: "sass",
-        title: 'SASS',
-        viewBox: '0 0 32 32'
-    },
+    // {
+    //     iconId: "sass",
+    //     title: 'SASS',
+    //     viewBox: '0 0 32 32'
+    // },
     {
         iconId: "eslint",
         title: 'ESLint',
         viewBox: '0 0 32 32'
     },
+    // {
+    //     iconId: "postman",
+    //     title: 'Postman',
+    //     viewBox: '0 0 300 300'
+    // },
     {
-        iconId: "postman",
-        title: 'Postman',
-        viewBox: '0 0 300 300'
+        iconId: "swagger",
+        title: 'Swagger',
+        viewBox: '0 0 32 32'
     },
 
     // {
@@ -85,12 +90,12 @@ const skillData = [
     ,
     {
         iconId: "styled",
-        title: 'Styled component',
+        title: 'StyledComponent',
         viewBox: '0 0 32 32'
     },
     {
         iconId: "storybook",
-        title: 'Story book',
+        title: 'Storybook',
         viewBox: '0 0 64 64'
     }
 ]
