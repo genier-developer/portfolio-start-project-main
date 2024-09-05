@@ -16,7 +16,7 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
         <S.Work>
             <S.ImageWrapper>
                 <S.Image src={props.src} alt="project"/>
-                <Button><a href={props.href} >View project</a></Button>
+                <Button><a href={props.href} target={'_blank'}>View project</a></Button>
             </S.ImageWrapper>
 
             <S.TextWrapper>
