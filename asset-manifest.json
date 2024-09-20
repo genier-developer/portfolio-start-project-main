@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.cb0d5a4c.js",
+    "main.js": "/static/js/main.77409888.js",
     "static/js/787.25eaef86.chunk.js": "/static/js/787.25eaef86.chunk.js",
     "static/media/pets.webp": "/static/media/pets.8515b9495730c2b8182b.webp",
     "static/media/partner.webp": "/static/media/partner.3191e0dfe876bbc9147d.webp",
+    "static/media/contemporary-room-workplace-office-supplies-concept.webp": "/static/media/contemporary-room-workplace-office-supplies-concept.dd0f9c83ae555bd62c0e.webp",
+    "static/media/rick-and-morty.jpg": "/static/media/rick-and-morty.b741cd26303a589717eb.jpg",
     "static/media/Photo.webp": "/static/media/Photo.569b37bf75a3957f1a3c.webp",
-    "static/media/colorLogo.png": "/static/media/colorLogo.288a2fe921f8857f1098.png",
     "static/media/cards.webp": "/static/media/cards.23fc9841363da2a65046.webp",
-    "static/media/icons-sprite.svg": "/static/media/icons-sprite.559aa0328717c6beb9ece024e5293a52.svg",
-    "static/media/CRCG_site.webp": "/static/media/CRCG_site.4a2fcf2846ed288416be.webp",
+    "static/media/icons-sprite.svg": "/static/media/icons-sprite.52cb73053b8aceb4baa1f352656fe354.svg",
     "static/media/friendConnect.webp": "/static/media/friendConnect.c9f1794cbcb976e77c9a.webp",
     "index.html": "/index.html",
-    "main.cb0d5a4c.js.map": "/static/js/main.cb0d5a4c.js.map",
+    "main.77409888.js.map": "/static/js/main.77409888.js.map",
     "787.25eaef86.chunk.js.map": "/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.cb0d5a4c.js"
+    "static/js/main.77409888.js"
   ]
 }
